@@ -95,6 +95,7 @@ print(msg)
 '''
 
 #String Methods
+'''
 course = 'Python for Beginners'
 print(len(course))
 print(course.upper())
@@ -107,3 +108,78 @@ print(course.replace('Beginners', 'Absolute Beginners'))
 print('Python' in course)
 print('python' in course)
 print(course.title())
+'''
+
+#Arithmetic Operations
+'''
+print(10 / 3)
+print(10 // 3) #int
+print(10 % 3) #modulo
+print(10 ** 3) #exponent
+x = 10
+# x = x + 10
+# x += 3 #augmented assignment operator
+x -= 3
+print(x)
+'''
+
+#Operator Precedence
+'''
+x = (10 + 3) * 2 ** 2
+print(x)
+
+#parenthesis
+# exponentiation 2 ** 3
+# multiplication or division
+#addition or subtruction
+'''
+
+#Math Functions
+'''
+x = 2.9
+print(round(x))
+print(abs(-2.9))
+
+import math
+print(math.ceil(2.9))
+print(math.floor(2.9))
+'''
+
+#If Statements
+'''
+if it's a hot
+    It' a hot day
+    Drink plenty of water
+otherwise if it's cold
+    It's a cold day
+    Wear warm clothes
+otherwise
+    It's a lovely day
+'''
+'''
+is_hot = False
+is_cold = True
+
+if is_hot:
+    print("It' a hot day")
+    print("Drink plenty of water")
+elif is_cold:
+    print("It's a cold day")
+    print("Wear warm clothes")
+else:
+    print("It's a lovely day")
+print("Enjoy your day")
+'''
+#Exercise #4
+'''
+house_price = 1_000_000
+is_good_credit = True
+
+if is_good_credit:
+   down_payment = house_price * 0.10
+else:
+    down_payment = house_price * 0.20
+print(f"Down payment: ${down_payment}")
+'''
+
+
