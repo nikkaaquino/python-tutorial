@@ -182,4 +182,58 @@ else:
 print(f"Down payment: ${down_payment}")
 '''
 
+#Logical Operators
+'''
+#AND:
+#OR
+#NOT
+
+has_high_income = True
+#has_good_credit = True
+has_criminal_record = True
+
+#if has_high_income and has_good_credit:
+#if has_high_income or has_good_credit:
+if has_high_income and not has_criminal_record:
+    print("Eligble for loan")
+'''
+
+#Comparison Operators
+'''
+temperature = 35
+
+if temperature != 30:
+    print("It's a hot day")
+else:
+    print("It's not a hot day")
+'''
+#Exercise #5
+'''
+name = "John Smith"
+
+if len(name) < 3:
+    print("Name must be atleast 3 characters")
+elif len(name) > 50:
+    print("Name can be a maximum of 50 characters")
+else:
+    print("Name looks good")
+'''
+
+#Weight Converter Program (Simple Project)
+'''
+weight = int(input("Weight: "))
+unit = input("(L)bs or (K)g: ")
+
+if unit.upper() == "L":
+    weight_converted = weight * 0.45
+    print(f'You are {weight_converted} pounds')
+else:
+     weight_converted = weight/0.45
+     print(f'You are {weight_converted} kilograms')
+'''
+
+   
+
+
+
 
