@@ -241,6 +241,7 @@ print("Done")
 '''
 
 #Guessing Game
+'''
 secret_number = 9
 guess_count = 0
 guess_limit = 3
@@ -253,8 +254,83 @@ while guess_count < guess_limit:
         break
 else:
     print("Sorry you failed.")
+'''
 
+#Building the Car Game
+'''
+command = ""
+started = False
 
+while True:
+    command = input("> ").lower()
+    if command == "start":
+        if started:
+            print("Car is already started!")
+        else:
+            started = True
+            print("Car started...")
+    elif command == "stop":
+        if not started:
+            print("Car is already stopped!")
+        else:
+            started = False
+            print("Car stopped.")
+    elif command == "help":
+        print("""
+start - to start the car
+stop - to stop the car
+quit - to quit
+        """)
+    elif command == "quit":
+        break
+    else:
+        print("Sorry, I don't understand that")
+'''
+
+#For Loops
+'''
+for item in 'Python':
+    print(item)
+'''
+'''
+for item in ['Mosh', 'John', 'Sarah']:
+    print(item)
+'''
+'''
+for item in [1, 2, 3, 4, 5]:
+    print(item)
+'''
+'''
+#for item in range(10):
+#for item in range(5, 10): #start and end
+for item in range(5, 10, 2): #two steps forward
+    print(item)
+'''
+'''
+prices = [10, 20, 30]
+total = 0
+
+for price in prices:
+   total += price
+print(f"Total: {total}")
+'''
+
+#Nested Loops
+'''
+for x in range(4):
+    for y in range(3):
+        print(f'{x},{y}')
+'''
+
+#Challenge
+numbers = [5, 2, 5, 2, 2]
+
+for x_count in numbers:
+    output = ''
+    for count in range(x_count):
+        output += 'x'
+    print(output)
+    #print('x' * x)
    
 
 
