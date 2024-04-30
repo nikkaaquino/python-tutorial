@@ -546,3 +546,138 @@ except ValueError:
     print('Invalid value')
 '''
 
+#Classes
+'''
+class Point:
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+point1 = Point()
+point1.x = 10
+point1.y = 20
+print(point1.x)
+point1.draw()
+
+point2 = Point()
+point2.x = 1
+print(point2.x)
+
+'''
+
+#Constructors
+'''
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+point = Point(10, 20)
+point.x = 11
+print(point.x)
+'''
+
+#Exercise
+'''
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def talk(self):
+        print(f"Hi, I am {self.name}")
+
+person = Person(input(">"))
+person.talk()
+'''
+
+#Inheritance
+'''
+class Mammal: 
+    def walk(self):
+        print("walk")
+
+class Dog(Mammal):
+    #pass
+    def bark(self):
+        print("bark")   
+
+class Cat(Mammal):
+    #pass
+    def be_annoying(self):
+        print("annoying")
+
+dog1 =  Dog()
+dog1.walk()
+dog1.bark()
+
+cat1 = Cat()
+cat1.be_annoying()
+'''
+
+#Modules
+'''
+import converters
+from converters import kg_to_lbs
+
+kg_to_lbs()
+
+print(converters.kg_to_lbs(70))
+'''
+
+#Exercise
+'''
+from utils import find_max
+
+numbers = [10, 3, 6, 2]
+maximum = find_max(numbers)
+print(maximum)
+#print(max(numbers))
+'''
+
+#Packages
+'''
+#import ecommerce.shipping
+#ecommerce.shipping.calc_shipping()
+
+#from ecommerce.shipping import calc_shipping
+#calc_shipping()
+
+from ecommerce import shipping
+shipping.calc_shipping()
+'''
+
+#Generating Random Values
+'''
+import random
+
+#for i in range(3):
+   #print(random.random())
+   #print(random.randint(10, 20))
+
+members = ['John', 'Mary', 'Bob', 'Mosh']
+leader = random.choice(members)
+print(leader)
+'''
+
+#Exercise
+'''
+import random
+
+class Dice:
+    def roll(self):
+        first = random.randint(1, 6)
+        second = random.randint(1, 6)
+        return first, second
+
+dice = Dice()
+print(dice.roll())
+'''
+
+#Working with Directories
